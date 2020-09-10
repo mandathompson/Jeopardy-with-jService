@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jeopardy</title>
+  <link href="https://fonts.googleapis.com/css?family=Copse&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="jeopardy.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+<body class="body">
+
+<div class="container">
+  <div class="page-header text-center">
+    <h1 class="title">Jeopardy</h1>
+  </div>
+</div>
+
+
+<div class="form-row text-center">
+  <div class="col-12">
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Directions</button>
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">How To Play:</h4>
+          </div>
+          <div class="modal-body">
+            <p>Click on a ? to reveal the answer. Click again to reveal the correct question.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<table class="container" id="jeopardy">
+  <thead></thead>
+  <tbody id="tbody"></tbody>
+</table>
+
+<div class="form-row text-center">
+  <div class="col-12">
+    <button class="btn btn-info btn-lg" id="restart">Restart Game</button>
+  </div>
+</div>
+
+<footer class="footer">Made with &hearts; Amanda Thompson </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/jquery"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="https://unpkg.com/lodash"></script>
+<script src="jeopardy.js"></script>
+
+</body>
+</html>
